@@ -9,6 +9,7 @@ def Main():
     global ActiveNumber
     MathNumber = ActiveNumber
     KeyStoneCount = 0
+    File = open("Keystone-caculator/Keystone History.txt", "a")
     print("Running Process...")
     while True:
         if MathNumber % 2 == 0:
@@ -19,20 +20,16 @@ def Main():
             print(MathNumber)
         KeyStoneCount = KeyStoneCount + 1
         if MathNumber == 1:
-            ActiveNumber = ActiveNumber + 1
             if Output:
                 print("Loop Found!\nRaising ActiveNumber by 1...")
                 print(f"Total Steps: {KeyStoneCount}")
                 print(f"Active number: {ActiveNumber}")
                 print("Restarting loop...\n---")
             ActiveNumber = ActiveNumber + 1
-            File = open("Keystone History.txt", "a")
             File.write(f"\n---\nActive Number: {ActiveNumber}\nKeystones: {KeyStoneCount}\n---\n")
-            File.close()
             MathNumber = ActiveNumber
             KeyStoneCount = 0
             #TODO: Add a file system that saves total amount of keystones
-            
 Main()
         
         
