@@ -3,7 +3,7 @@
 #If odd, Multiply number by 3 and add 1
 #More Info here: https://www.youtube.com/watch?v=094y1Z2wpJg
 ActiveNumber = 1
-Output = False
+Output = True
 def Main():
     global Output
     global ActiveNumber

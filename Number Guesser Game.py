@@ -9,7 +9,7 @@ Hints = True
 
 #Functions
 def GameLoop():
-    global BigNumber
+    global BigNumber2
     global SmallNumber
     global Hints
     KeyStones = 0

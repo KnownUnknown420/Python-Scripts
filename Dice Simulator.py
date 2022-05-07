@@ -26,3 +26,4 @@ def RollDice(amount):
     
 #Run SCript
 main()
+2
