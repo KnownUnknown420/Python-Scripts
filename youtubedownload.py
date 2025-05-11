@@ -28,3 +28,16 @@ def download_youtube_video(video_url, save_path):
         print("Download complete!")
     except Exception as e:
         print(f"An error occurred: {e}")
+
+if __name__ == "__main__":
+    video_url = input("Enter the YouTube video URL: ").strip()
+    save_path = input("Enter the folder path to save the video (leave blank for current directory): ").strip()
+
+    if not save_path:
+        save_path = os.getcwd()
+
+    if not os.path.isdir(save_path):
+        print(f"Creating directory: {save_path}")
+        os.makedirs(save_path, exist_ok=True)
+
+    download_youtube_video(video_url, save_path)
