@@ -1,1 +1,1 @@
-Python-Scripts is used for saving projects I worked on. I do this for fun!
+A collection of python scripts that I sometimes use. Alot of them are for my needs.
